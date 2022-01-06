@@ -1,0 +1,18 @@
+ssh-keygen -t id25519 -C nome@nomeemail.com
+
+id = codigo de identificação.
+
+1 - Depois navega até a pasta que contém os ids que fica na pasta .ssh
+2 - Usa o comando do id + o nome do arquivo ex:  cat id_ed25519.pub
+3 - Copia a chave que vai gerar e cola no Github na aba SSh and GPG keys
+
+
+Iniciar o SSH-agent
+
+1-Vá atá a pasta .ssh e digite o comando  eval $(ssh-agent -s) para inicar o ssh.
+
+
+Usando o agente para descriptografar 
+
+1 - ssh-add nome da chave ex: id_ed25519
+2 - ele vai pedir a senha que você criou
